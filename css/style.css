@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *{
-    font-family: "Poppins" , sans-serif;
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;   
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;  
 }
 body{
     font-family: "Quicksand", sans-serif;
@@ -55,9 +56,14 @@ body{
 
 /* heder */
 header{
+    width: 100%;
+    z-index: 999;
+    position: relative; 
+    align-items: center;
+    padding: 5px 170px;
     height: 100vh;
     background: url("../images/cover.png") center center/cover no-repeat;
-    position: relative;   
+
 }
 /* navbar */
 #navbar{
@@ -144,6 +150,22 @@ header::before{
 header * {
     z-index: 10;
 }
+/* شكل زرار المنيو */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
 /* end heder */
 /* about */
 #about {
@@ -270,16 +292,16 @@ header * {
     background-color: #ffff;
     color: #00da0b;
 }
-#menu .menu-items .items-title {
+/* #menu .menu-items .items-title { */
     /* width: 30%;
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-}
+/* } */
 
-#menu .menu-items .items-title a {
+/* #menu .menu-items .items-title a { */
     /* display: inline-block;
     padding: 10px 20px;
     background-color: #208346;
@@ -287,10 +309,10 @@ header * {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600; */
-}
-#menu .menu-items .items-title a:hover {
+/* } */
+/* #menu .menu-items .items-title a:hover { */
     /* background-color: #1a6f2c; */
-}
+/* } */
 /* end menu */
 
 /* Daytime */
@@ -343,41 +365,74 @@ font-weight: 500;
     opacity: 1;
 }
 /* end gallery */
+/* contact  */
 #contact {
     background-color: #f4f4f4;
     padding: 5rem 0;
 }
-#contact .contact-content {
+#contact .container {
+    max-width: 900px;
     display: flex;
-    justify-content: space-between;
+}
+#contact .contact-content {
+    /* display: flex; */
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0 20px;
 }
 #contact .contact-content .contact-info {
-    width: 30%;
+    width: 50%;
 }
-#contact .contact-content .contact-info p {
+#contact .contact-content .contact-info div {
+    margin: 30px 0;
+    line-height: 1.7;
+}
+#contact .contact-content .contact-info h3 {
+    font-size: 28px;
+    color: #383848;
     margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #333;
 }
-#contact .contact-content .contact-info p i {
+#contact .contact-content .contact-info p{
+    font-size: 16px;
+    color: #9a9a9a;
+}
+#contact .contact-content .contact-info i {
     color: #208346;
-    margin-right: 10px;
+    margin-right: 5px;
 }
-#contact .contact-content form {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
+#contact .contact-content .contact-info a i {
+    color: #fff;
+    background-color: #383838;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
 }
-#contact .contact-content form input,
-#contact .contact-content form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+#contact .contact-content .contact-info a i:hover{
+    background-color: #00ff624d;
+    color: #fff;
+
+}
+ form {
+    width: 50%;
+}
+form input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #d8d8d8;
     border-radius: 5px;
-    font-size: 1em;
+   }
+#contact .btn{
+    background-color: #208346;
+    color: #fff;
+    cursor: pointer;
 }
+#contact .btn:hover{
+    background-color: #00d42e;
+}
+
 /* end contact */
 /* footer */
 footer {
@@ -391,56 +446,123 @@ footer a {
     text-decoration: none;
     margin: 0;
     font-size: 1em;
-    
+
 }
 /* end footer */
 /* media queries */
-@media (max-width: 1023px) {
+
+/* شاشات التابلت (أقل من 1024px) */
+@media (max-width: 1024px) {
   header {
-    padding: 12px 20px;
+    padding: 5px 40px;
+    height: auto;
   }
-  .navigation a {
-    padding-left: 10px;
+
+  #navbar {
+    padding: 0 40px;
   }
-  .title {
-    font-size: 1.8em;
-  }
-  section {
-    padding: 80px 20px;
-  }
-  .main .main-content{
-    padding: 1px 10px;
-  }
-  .main-content h2 {
-    font-size: 1em;
-  }
-  .main-content h3 {
-    font-size: 1.6em;
-  }
-  .content {
+
+  #about .about-content {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+  }
+
+  #about .about-content p {
+    margin: 20px 0;
+  }
+
+  #offers .offer-items {
+    flex-direction: column;
+  }
+
+  #menu .menu-items {
+    flex-direction: column;
+  }
+
+  #daytime .daytime-items {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  #contact .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #contact .contact-content .contact-info,
+  form {
+    width: 100%;
   }
 }
-@media (max-width: 641px) {
-  body {
-    font-size: 12px;
+
+/* شاشات الموبايل (أقل من 768px) */
+@media (max-width: 768px) {
+  header .content h1 {
+    font-size: 32px;
   }
-  .main .main-content{
-    padding: 1px 10px;
+
+  header .content p {
+    font-size: 16px;
   }
-  .main-content h2 {
-    font-size: 0.8em;
+
+  #navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    border-radius: 10px;
   }
-  .main-content h3 {
-    font-size: 1.4em;
+
+  #navbar {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+  }
+
+  #offers .offer-items img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #gallery .gallery-items img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }
-@media (max-width: 300px) {
-  body {
-    font-size: 10px;
+
+/* شاشات صغيرة جدًا (أقل من 480px) */
+@media (max-width: 480px) {
+  .title h2 {
+    font-size: 1.5em;
   }
-  .main .main-content{
-    padding: 1px 10px;
+
+  header .content h1 {
+    font-size: 24px;
+  }
+
+  header .content p {
+    font-size: 14px;
+  }
+
+  #navbar img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #menu .menu-items .menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #menu .menu-items .menu-item img {
+    margin-bottom: 10px;
   }
 }
+/* end media queries */
