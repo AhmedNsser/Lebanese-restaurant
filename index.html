@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olive</title>
     <!-- link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- font -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
+    <div id="preloader">
+  <div class="loader-content">
+    <img src="images/logo.jpeg" alt="Logo" />
+  </div>
+</div>
+<!--  -->
+<div id="image-popup" class="popup">
+  <span class="close">&times;</span>
+  <img id="popup-img" src="" alt="عرض مكبر" />
+</div>
+
     <!-- header -->
      <header>
         <div id="navbar">
             <div class="logo">
-                <img src="images/pngegg.png" alt="Restaurant Logo">
+                <img src="images/pngegg.png" alt="Restaurant Logo" class="popup-image">
+                <img src="images/logo2.jpeg" alt="Restaurant Logo" class="popup-image">
             </div>
             <nav>
                 <div class="menu-toggle" id="mobile-menu">
@@ -57,7 +69,7 @@
                 <p>Lebanese food is not just food, it is a celebration of hospitality and culture, and a journey through history in every bite.</p>
                 <a href="#" class="btn btn-secondary">Learn More</a>
             </div>
-            <img src="images/trath.webp" alt="Chef" srcset="">
+            <img src="images/trath.webp" alt="Chef" srcset="" class="popup-image">
           </div>
         </div>
       </section>
@@ -73,7 +85,7 @@
                     <!-- 1 -->
                     <div class="offer-item">
                         <div>
-                            <img src="images/1.jpeg" alt="Hummus">
+                            <img src="images/1.jpeg" alt="Hummus" class="popup-image">
                         </div>
                         <div>
                             <h3>Hummus</h3>
@@ -84,7 +96,7 @@
                     <!-- 2 -->
                      <div class="offer-item">
                         <div>
-                            <img src="images/2.jpeg" alt="Fattoush Salad">
+                            <img src="images/2.jpeg" alt="Fattoush Salad" class="popup-image">
                         </div>
                         <div>
                             <h3>Fattoush Salad</h3>
@@ -95,7 +107,7 @@
                     <!-- 3 -->
                      <div class="offer-item">
                         <div>
-                            <img src="images/3.jpeg" alt="Kebabs">
+                            <img src="images/3.jpeg" alt="Kebabs" class="popup-image">
                         </div>
                         <div>
                             <h3>Kebabs</h3>
@@ -115,6 +127,8 @@
                     <p>Explore our delicious Lebanese dishes</p>
                 </div>
                 <div class="menu-items">
+                    
+
                     <!-- <div class="items-title">
                         <ul>
                             <li><a href="#hummus">Hummus</a></li>
@@ -126,37 +140,37 @@
                     <div class="menu-items-left">
                         <!-- 1 -->
                         <div class="menu-item">
-                            <img src="images/1.jpeg" alt="Hummus">
+                            <img src="images/1.jpeg" alt="Hummus" class="popup-image">
                             <h3>Hummus <span class="primary-text">$80.00</span></h3>
                             <p>A creamy blend of chickpeas, tahini, lemon juice, and garlic.</p>
                         </div>
                         <!-- 2 -->
                         <div class="menu-item">
-                            <img src="images/2.jpeg" alt="Fattoush Salad">
+                            <img src="images/2.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                         </div>
                          <!-- 3 -->
                          <div class="menu-item">
-                            <img src="images/3.jpeg" alt="Fattoush Salad">
+                            <img src="images/3.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                         </div>
                         <!-- 4 -->
                          <div class="menu-item">
-                            <img src="images/4.jpeg" alt="Fattoush Salad">
+                            <img src="images/4.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                         </div>
                         <!-- 5 -->
                          <div class="menu-item">
-                            <img src="images/5.jpeg" alt="Fattoush Salad">
+                            <img src="images/5.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                         </div>
                         <!-- 6 -->
                          <div class="menu-item">
-                            <img src="images/6.jpeg" alt="Fattoush Salad">
+                            <img src="images/6.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                          </div>
@@ -164,37 +178,37 @@
                     <div class="menu-items-right">
                         <!-- 1 -->
                         <div class="menu-item">
-                            <img src="images/1.jpeg" alt="Hummus">
+                            <img src="images/1.jpeg" alt="Hummus" class="popup-image">
                             <h3>Hummus <span class="primary-text">$80.00</span></h3>
                             <p>A creamy blend of chickpeas, tahini, lemon juice, and garlic.</p>
                         </div>
                         <!-- 2 -->
                         <div class="menu-item">
-                            <img src="images/2.jpeg" alt="Fattoush Salad">
+                            <img src="images/2.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                         </div>
                          <!-- 3 -->
                          <div class="menu-item">
-                            <img src="images/3.jpeg" alt="Fattoush Salad">
+                            <img src="images/3.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                         </div>
                         <!-- 4 -->
                          <div class="menu-item">
-                            <img src="images/4.jpeg" alt="Fattoush Salad">
+                            <img src="images/4.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                         </div>
                         <!-- 5 -->
                          <div class="menu-item">
-                            <img src="images/5.jpeg" alt="Fattoush Salad">
+                            <img src="images/5.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                         </div>
                         <!-- 6 -->
                          <div class="menu-item">
-                            <img src="images/6.jpeg" alt="Fattoush Salad">
+                            <img src="images/6.jpeg" alt="Fattoush Salad" class="popup-image">
                             <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
                             <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
                          </div>
@@ -211,19 +225,19 @@
                 <div class="daytime-items">
                     <!-- 1 -->
                     <div class="daytime-item">
-                        <img src="images/breckfastIcon.png" alt="Breakfast Platter">
+                        <img src="images/breckfastIcon.png" alt="Breakfast Platter" class="popup-image">
                         <h3>Breakfast Platter</h3>
                         <p>A hearty breakfast platter with eggs, bread, and fresh vegetables.</p>
                     </div>
                     <!-- 2 -->
                     <div class="daytime-item">
-                        <img src="images/lunchIcon.png" alt="Lunch Combo">
+                        <img src="images/lunchIcon.png" alt="Lunch Combo" class="popup-image">
                         <h3>Lunch Combo</h3>
                         <p>A delicious lunch combo with a choice of main dish and side.</p>
                     </div>
                     <!-- 3 -->
                     <div class="daytime-item">
-                        <img src="images/dessertIcon.png" alt="Smoothie Bowl">
+                        <img src="images/dessertIcon.png" alt="Smoothie Bowl" class="popup-image">
                         <h3>Smoothie Bowl</h3>
                         <p>A refreshing smoothie bowl topped with fruits and nuts.</p>
                     </div>
@@ -238,18 +252,18 @@
                     <h2>Gallery</h2>
                 </div>
                 <div class="gallery-items">
-                    <img src="images/1.jpeg" alt="Hummus">
-                    <img src="images/2.jpeg" alt="Fattoush Salad">
-                    <img src="images/3.jpeg" alt="Kebabs">
-                    <img src="images/4.jpeg" alt="Grilled Chicken">
-                    <img src="images/5.jpeg" alt="Baklava">
-                    <img src="images/6.jpeg" alt="Lebanese Bread">
-                    <img src="images/7.jpeg" alt="Tabbouleh">
-                    <img src="images/8.jpeg" alt="Stuffed Grape Leaves">
-                    <img src="images/9.jpeg" alt="Falafel">
-                    <img src="images/10.jpeg" alt="Lebanese Sweets">
-                    <img src="images/11.jpeg" alt="Lebanese Mezze">
-                    <img src="images/12.jpeg" alt="Lebanese Coffee">
+                    <img src="images/1.jpeg" alt="Hummus" class="popup-image">
+                    <img src="images/2.jpeg" alt="Fattoush Salad" class="popup-image">
+                    <img src="images/3.jpeg" alt="Kebabs" class="popup-image">
+                    <img src="images/4.jpeg" alt="Grilled Chicken" class="popup-image">
+                    <img src="images/5.jpeg" alt="Baklava" class="popup-image">
+                    <img src="images/6.jpeg" alt="Lebanese Bread" class="popup-image">
+                    <img src="images/7.jpeg" alt="Tabbouleh" class="popup-image">
+                    <img src="images/8.jpeg" alt="Stuffed Grape Leaves" class="popup-image">
+                    <img src="images/9.jpeg" alt="Falafel" class="popup-image">
+                    <img src="images/10.jpeg" alt="Lebanese Sweets" class="popup-image">
+                    <img src="images/11.jpeg" alt="Lebanese Mezze" class="popup-image">
+                    <img src="images/12.jpeg" alt="Lebanese Coffee" class="popup-image">
 
                 </div>
             </div>
@@ -296,6 +310,7 @@
             </div>
         </footer>
         <!-- end footer -->
+        <script src="assets/javascrept/script.js"></script>
          <!-- https://ahmednsser.github.io/Lebanese-restaurant/ -->
     </body>
 </html>
