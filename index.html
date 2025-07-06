@@ -7,79 +7,58 @@
     <title>Olive</title>
     <!-- link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- font -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 </head>
 <body>
+    <!-- preloader -->
     <div id="preloader">
-  <div class="loader-content">
-    <img src="images/logo.jpeg" alt="Logo" />
-  </div>
-</div>
-<!--  -->
-<div id="image-popup" class="popup">
-  <span class="close">&times;</span>
-  <img id="popup-img" src="" alt="عرض مكبر" />
-</div>
-
+    <div class="loader-content">
+        <img src="images/logo.jpeg" alt="Logo" />
+    </div>
+    </div>
+    <!-- popup -->
+    <div id="image-popup" class="popup">
+    <span class="close">&times;</span>
+    <img id="popup-img" src="" alt="عرض مكبر" />
+    </div>
     <!-- header -->
      <header>
         <div id="navbar">
             <div class="logo">
-                <img src="images/pngegg.png" alt="Restaurant Logo" class="popup-image">
                 <img src="images/logo2.jpeg" alt="Restaurant Logo" class="popup-image">
             </div>
             <nav>
-                <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#menu">قائمتنا</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                    <button id="darkModeToggle">🌙</button>
                 </ul>
             </nav>
         </div>
         <div class="content">
-            <h1>Welcome to Our <span class="primary-text"> Lebanese </span> Restaurant</h1>
-            <p>Experience the taste of authentic Lebanese cuisine.</p>
+            <img src="images/pngegg.png" alt="Restaurant Logo" class="popup-image">
+            <h1> مرحبا بكم في المخبز <span class="primary-text"> اللبناني </span> </h1>
+            <p>استمتع بمذاق المطبخ اللبناني الأصيل.</p>
             <div class="social-icons">
                 <a href="https://www.instagram.com/el.makhbaz.el.lebnene?igsh=dHptNWIyamwycTZp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com/share/16Y6e6VRAC/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
             </div>
-            <a href="#menu" class="btn btn-primary">View Menu</a>
+            <a href="#menu" class="btn btn-primary">قائمتنا</a>
+            <a href="#" class="btn btn-primary">أحجز لأن</a>
      </header>
      <!-- end header -->
-      <!-- About -->
-      <section  id="about">
-        <div class="container">
-          <div class="title">
-            <h2>The Food Lover history</h2>
-            <p>A flavor that is thousands of years old</p>
-          </div>
-        
-        <div class="about-content">
-            <div>
-                <p>We are a family-owned Lebanese restaurant dedicated to bringing you the best of Lebanese cuisine. Our chefs use traditional recipes and fresh ingredients to create dishes that are both delicious and authentic.</p>
-                <p>Lebanese cuisine is considered one of the oldest cuisines in the world, dating back more than 4,000 years to the Phoenicians, who inhabited the Lebanese coast and left their mark on cooking and food preservation methods. It is famous for its balanced ingredients, relying on fresh vegetables, grains, olive oil, and aromatic spices.</p>
-                <p>Lebanese food is not just food, it is a celebration of hospitality and culture, and a journey through history in every bite.</p>
-                <a href="#" class="btn btn-secondary">Learn More</a>
-            </div>
-            <img src="images/trath.webp" alt="Chef" srcset="" class="popup-image">
-          </div>
-        </div>
-      </section>
-      <!-- end about -->   
+     
         <!-- offers -->
         <section id="offers">
             <div class="container">
                 <div class="title">
-                    <h2>Special Offers</h2>
-                    <p>Enjoy our exclusive offers and discounts</p>
+                    <h2>عروض خاصة</h2>
+                    <p>استمتع بعروضنا وخصوماتنا الحصرية</p>
                 </div>
                 <div class="offer-items">
                     <!-- 1 -->
@@ -119,104 +98,107 @@
             </div>
         </section>
         <!-- end offers -->
-        <!-- Menu -->
+         <!-- Menu -->
         <section id="menu">
             <div class="container">
                 <div class="title">
-                    <h2>Our Menu</h2>
+                    <h2>قائمتنا</h2>
                     <p>Explore our delicious Lebanese dishes</p>
                 </div>
+            <div class="meal-slider">
                 <div class="menu-items">
-                    
-
-                    <!-- <div class="items-title">
-                        <ul>
-                            <li><a href="#hummus">Hummus</a></li>
-                            <li><a href="#fattoush-salad">Fattoush Salad</a></li>
-                            <li><a href="#tabbouleh">Tabbouleh</a></li>
-                            <li><a href="#baba-ghanoush">Baba Ghanoush</a></li>
-                        </ul>
-                    </div> -->
                     <div class="menu-items-left">
                         <!-- 1 -->
-                        <div class="menu-item">
+                        <div id="bread" class="menu-item" >
                             <img src="images/1.jpeg" alt="Hummus" class="popup-image">
-                            <h3>Hummus <span class="primary-text">$80.00</span></h3>
-                            <p>A creamy blend of chickpeas, tahini, lemon juice, and garlic.</p>
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
                         </div>
                         <!-- 2 -->
-                        <div class="menu-item">
+                        <div id="mashack" class="menu-item">
                             <img src="images/2.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
-                        </div>
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
+                       </div>
                          <!-- 3 -->
                          <div class="menu-item">
                             <img src="images/3.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
                         </div>
                         <!-- 4 -->
                          <div class="menu-item">
                             <img src="images/4.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
-                        </div>
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
+                     </div>
                         <!-- 5 -->
                          <div class="menu-item">
                             <img src="images/5.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
                         </div>
                         <!-- 6 -->
                          <div class="menu-item">
                             <img src="images/6.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
                          </div>
                     </div>
                     <div class="menu-items-right">
                         <!-- 1 -->
                         <div class="menu-item">
-                            <img src="images/1.jpeg" alt="Hummus" class="popup-image">
-                            <h3>Hummus <span class="primary-text">$80.00</span></h3>
-                            <p>A creamy blend of chickpeas, tahini, lemon juice, and garlic.</p>
+                            <img src="images/7.jpeg" alt="Hummus" class="popup-image">
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
                         </div>
                         <!-- 2 -->
                         <div class="menu-item">
-                            <img src="images/2.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
+                            <img src="images/8.jpeg" alt="Fattoush Salad" class="popup-image">
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
                         </div>
                          <!-- 3 -->
                          <div class="menu-item">
-                            <img src="images/3.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
+                            <img src="images/9.jpeg" alt="Fattoush Salad" class="popup-image">
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
                         </div>
                         <!-- 4 -->
                          <div class="menu-item">
-                            <img src="images/4.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
+                            <img src="images/10.jpeg" alt="Fattoush Salad" class="popup-image">
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
                         </div>
                         <!-- 5 -->
                          <div class="menu-item">
-                            <img src="images/5.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
+                            <img src="images/11.jpeg" alt="Fattoush Salad" class="popup-image">
+                            <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item">أعرف أكثر</button>
                         </div>
                         <!-- 6 -->
                          <div class="menu-item">
-                            <img src="images/6.jpeg" alt="Fattoush Salad" class="popup-image">
-                            <h3>Fattoush Salad <span class="primary-text">$80.00</span></h3>
-                            <p>A refreshing salad with mixed greens, tomatoes, cucumbers, and crispy pita chips.</p>
-                         </div>
+                             <img src="images/12.jpeg" alt="Fattoush Salad" class="popup-image">
+                           <h5>سيبيال الخبز اللبناني</h5>
+                            <p class="section-description">تشكيلة من المناقيش التقليدية بطعم الزعتر، المحمرة، والسبانخ، تناسب كل الأذواق وتعبر عن أصالة المطبخ اللبناني.</p>
+                            <button class="btn btn-item" ><a href="menu.html">أعرف أكثر</a></button>
+                        </div>
                     </div>
                 </div>
-                 <!-- more -->
-                <button class="btn">Explore Full Menu</button>
             </div>
+                <!-- more -->
+                            <button class="btn btn-item" ><a href="menu.html" target="_blank">أعرف أكثر</a></button>            </div>
         </section>
         <!-- end Menu -->
         <!-- Daytime -->
@@ -269,39 +251,59 @@
             </div>
         </section>
          <!-- end Gallery -->
-       <!-- contact -->
-        <section id="contact" class="contact">
-            <div class="container">
-              <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Address</h3>
-                        <p><i class="fa-solid fa-location-dot"></i> Rawdat Zayed Mall Al Moez next to Kufta Arrived Dahshur </p>
-                        <p><i class="fa-solid fa-location-dot"></i> District 12, behind the Canadian University, next to Hysteria Market, El Sheikh Zayed, Egypt </p>
-                        <p><i class="fa-solid fa-phone"></i> 01018624795 </p>
-                        <p><i class="fa-solid fa-phone"></i> 01004098888 </p>
-                    </div>
-                    <div>
-                        <h3>Working Hours</h3>
-                        <p>Monday - Friday: 10:00 AM - 11:00 PM</p>
-                        <p>Saturday - Sunday: 10:00 AM - 12:00 AM</p>
-                    </div>
-                    <div>
-                        <h3>Follow Us</h3>
-                       <div class="social-icons">
-                    <a href="https://www.instagram.com/el.makhbaz.el.lebnene?igsh=dHptNWIyamwycTZp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/share/16Y6e6VRAC/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-                     </div>
-                </div>
-                </div>
-                <form action="#" method="post">
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
-                    <input type="email" name="email" id="email" placeholder="Your Email" required>
-                    <input type="text" name="Subject" id="Subject" placeholder="Subject" required>
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+           <!-- About -->
+      <section  id="about">
+        <div class="container">
+          <div class="title">
+            <h2> تاريخ محبي الطعام </h2>
+            <p>نكهة عمرها آلاف السنين</p>
+          </div>
+        
+        <div class="about-content">
+            <div>
+                <p>نحن مطعم لبناني عائلي، ملتزم بتقديم أشهى المأكولات اللبنانية. يستخدم طهاتنا وصفات تقليدية ومكونات طازجة لإعداد أطباق شهية وأصيلة.</p>
+                <p>يُعتبر المطبخ اللبناني من أقدم المطابخ في العالم، إذ يعود تاريخه إلى أكثر من 4000 عام، مع الفينيقيين الذين سكنوا الساحل اللبناني وتركوا بصماتهم في أساليب الطبخ وحفظ الطعام. يشتهر بمكوناته المتوازنة، معتمدًا على الخضراوات الطازجة والحبوب وزيت الزيتون والتوابل العطرية.</p>
+                <p>الطعام اللبناني ليس مجرد طعام، بل هو احتفال بالضيافة والثقافة، ورحلة عبر التاريخ في كل قضمة.</p>
+                <a href="#" class="btn btn-secondary">أعرف أكثر</a>
             </div>
-        </section>
+            <img src="images/trath.webp" alt="Chef" srcset="" class="popup-image">
+          </div>
+        </div>
+      </section>
+      <!-- end about -->   
+       <!-- contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Address</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Rawdat Zayed Mall Al Moez next to Kufta Arrived Dahshur </p>
+            <p><i class="fa-solid fa-location-dot"></i> District 12, behind the Canadian University, next to Hysteria Market, El Sheikh Zayed, Egypt </p>
+            <p><i class="fa-solid fa-phone"></i> 01018624795 </p>
+            <p><i class="fa-solid fa-phone"></i> 01004098888 </p>
+          </div>
+          <div>
+            <h3>Working Hours</h3>
+            <p>Monday - Friday: 10:00 AM - 11:00 PM</p>
+            <p>Saturday - Sunday: 10:00 AM - 12:00 AM</p>
+          </div>
+          <div>
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+            <a href="https://www.instagram.com/el.makhbaz.el.lebnene?igsh=dHptNWIyamwycTZp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/16Y6e6VRAC/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+       </div>
+       <form action="#" method="post">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <input type="text" name="Subject" id="Subject" placeholder="Subject" required>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+       </form>
+      </div>
+    </section>
        <!-- end contact -->
         <!-- footer -->
         <footer>
@@ -311,6 +313,7 @@
         </footer>
         <!-- end footer -->
         <script src="assets/javascrept/script.js"></script>
-         <!-- https://ahmednsser.github.io/Lebanese-restaurant/ -->
+        <script src="assets/javascrept/bootstrap.bundle.min.js"></script>
+        <!-- https://ahmednsser.github.io/Lebanese-restaurant/ -->
     </body>
 </html>
