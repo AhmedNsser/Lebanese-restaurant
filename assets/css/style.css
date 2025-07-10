@@ -13,7 +13,7 @@ body{
       background: #fff;
       color: #111;
       scroll-behavior: smooth;
-      transition: background 0.1s, color 0.1s;
+      transition: background 0.9s, color 0.9s;
 
 }
 .dark-mode {
@@ -33,7 +33,7 @@ body{
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  transition: opacity 0.1s ease, visibility 0.1s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .loader-content {
@@ -43,7 +43,7 @@ body{
 #preloader img {
   width: 500px;
   height: 500px;
-  animation: spin 1s linear infinite;
+  animation: spin .3s linear infinite;
 }
 
 #preloader p {
