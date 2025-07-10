@@ -24,7 +24,7 @@ body{
       background-color: #1e1e1e;
       border-bottom-color: #444;
     }
-/* X */
+/* preloader */
 #preloader {
   position: fixed;
   inset: 0;
@@ -43,7 +43,7 @@ body{
 #preloader img {
   width: 500px;
   height: 500px;
-  animation: spin 3s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 #preloader p {
@@ -58,6 +58,7 @@ body{
   opacity: 0;
   visibility: hidden;
 }
+/* popup */
 /* الخلفية السوداء */
 .popup {
   display: none;
@@ -88,6 +89,7 @@ body{
 
 
 /* Utility Classes */
+
 .container{
     max-width: 1100px;
     margin: auto;
@@ -139,6 +141,58 @@ body{
     color: #333;
     font-weight: 600;
 }
+/* heder */
+header{
+    width: 100%;
+    z-index: 999;
+    position: relative; 
+    align-items: center;
+    padding: 5px 170px;
+    height: 100vh;
+    background: url("../../images/cover.png") center center/cover no-repeat;
+}
+
+header .content img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding-top: 30px;
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 75vh;
+    padding: 100px 20px;
+}
+header .content h1{
+    font-size: 48px;
+    color: #fff;
+}
+header .content h1 span{
+    color: green;
+}
+header .content p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header * {
+    z-index: 10;
+}
+/* navbar */
+
  .nov{
     align-items: center;
     padding: 0px 170px;
@@ -170,24 +224,6 @@ body{
     padding: 0 20px;
     text-decoration: none;
 }
-/* heder */
-header{
-    width: 100%;
-    z-index: 999;
-    position: relative; 
-    align-items: center;
-    padding: 5px 170px;
-    height: 100vh;
-    background: url("../../images/cover.png") center center/cover no-repeat;
-}
-
-header .content img{
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  padding-top: 30px;
-}
-/* navbar */
 #navbar {
     display: flex;
     align-items: center;
@@ -237,27 +273,6 @@ header .content img{
   color: #fff;
 }
 /* end navbar */
-header .content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 75vh;
-    padding: 100px 20px;
-}
-header .content h1{
-    font-size: 48px;
-    color: #fff;
-}
-header .content h1 span{
-    color: green;
-}
-header .content p{
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 30px;
-}
 .social-icons{
     display: flex;
     gap: 20px;
@@ -275,18 +290,6 @@ header .content p{
 .contact-content .social-icons a:hover{
     color: #208346;
  }
-header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-header * {
-    z-index: 10;
-}
 /* شكل زرار المنيو */
 #menuBtn {
     display: none;
