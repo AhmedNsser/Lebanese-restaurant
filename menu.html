@@ -6,33 +6,27 @@
   <title>اكتشف قائمتنا - المطبخ اللبناني</title>
     <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
- 
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">  -->
 </head>
 <body>
-         <div class="navbar-content">
-            <div class="logo">
-                <img src="images/logo2.jpeg" alt="Restaurant Logo" class="popup-image">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#menu">قائمتنا</a></li>
-                    <li><a href="#contact">تواصل معنا</a></li>
-                    <!-- <button id="darkModeToggle">🌙</button> -->
-                </ul>
-            </nav>
-        </div>
+  <div class="nov">
+            <img src="images/logo2.jpeg" alt="Restaurant Logo" class="popup-image">
+        <nav>
+          <ul>
+                <a href="index.html">الرئيسية</a>
+                <a href="index.html#about">من نحن</a>
+                <a href="index.html#menu">قائمتنا</a>
+                <a href="index.html#contact">تواصل معنا</a>
+        </ul>
+              </nav>
+</div>       
   <section class="banner fade-in">
-    <div class="container">
-    <img src="images/logo.jpeg" alt="اكتشف قائمتنا">
-    <h2>اكتشف قائمتنا</h2>
-    <form class="d-flex" role="search">
-       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-       <button class="btn btn-outline-success" type="submit">Search</button>
-     </form>
-     </div>
+      <div class="container">
+        <form id="search" class="d-flex" role="search">
+        <input class="form-controls form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      </div>
   </section>
   <section class="categories fade-in">
     <h2>الاقسام</h2>
@@ -42,6 +36,7 @@
       <div class="category"><a href="#woof">مناقيش لحمة</a></div>
       <div class="category"><a href="#kerry">مناقيش كيرى</a></div>
       <div class="category"><a href="#cheese">مناقيش جبنة</a></div>
+      <div class="category"><a href="#brick">مناقيش لبنة</a></div>
       <div class="category"><a href="#add">إضافات للمناقيش</a></div>
       <div class="category"><a href="#pizza">البيتزا</a></div>
       <div class="category"><a href="#soiree">سواريه</a></div>
@@ -59,19 +54,19 @@
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/1.jpeg" alt=" كفتة الخبز اللبناني">
-        <p>كفتة الخبز اللبناني <span>399$</span></p>
+        <p>كفتة الخبز اللبناني <span>399EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/2.jpeg" alt="سبايسي الخبز اللبناني">
-        <p>سبايسي الخبز اللبناني <span>389$</span> </p>
+        <p>سجق الخبز اللبناني <span>389EGP</span> </p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="هوت دوج الخبز اللبناني">
-        <p> هوت دوج الخبز اللبناني <span>349$</span></p>
+        <p> هوت دوج الخبز اللبناني <span>349EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/4.jpeg" alt="هوت دوج الخبز اللبناني">
-        <p> فينوس الخبز اللبناني <span>349$</span></p>
+        <p> فيموس الخبز اللبناني <span>349EGP</span></p>
       </div>
     </div>
   </section>
@@ -81,67 +76,63 @@
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/1.jpeg" alt="زعتر">
-        <p>زعتر <span>69$</span></p>
+        <p>زعتر <span>69EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/2.jpeg" alt="صفيحة لحمة + جبنة">
-        <p>زعتر + عكاوي<span>79$</span></p>
+        <p>زعتر + عكاوي<span>79EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="عرايس كفتة">
-       <p>زعتر + قشقوان <span>79$</span></p>
+       <p>زعتر + قشقوان <span>79EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/4.jpeg" alt="عرايس كفتة + جبنة">
-        <p>زعتر + خضار <span>79$</span></p>
-      </div>
-      <div class="meal-card">
-        <img src="images/5.jpeg" alt="شيش طاووق">
-        <p>محمره <span>69$</span></p>
+        <p>زعتر + خضار <span>79EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="شيش طاووق + جبنة">
-        <p>محمره + زعتر <span>79$</span></p>
+        <p>محمره + زعتر <span>79EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="كباب لبناني">
-        <p>محمره + جبنة <span>79$</span></p>
+        <p>محمره + جبنة <span>79EGP</span></p>
+      </div>
+      <div class="meal-card">
+        <img src="images/5.jpeg" alt="شيش طاووق">
+        <p>محمره <span>69EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="كباب لبناني + جبنة">
-        <p>محمره + نصف زعتر <span>79$</span></p>
-      </div>
-      <div class="meal-card">
-        <img src="images/3.jpeg" alt="">
-        <p>محمره + عكاوي <span>79$</span></p>
+        <p> نصف زعتر + نصف جبنه<span>79EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="مائدة">
-        <p>محمره + قشقوان <span>79$</span></p>
+        <p>كشك <span>79EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="مائدة">
-        <p>سبانخ <span>69$</span></p>
+        <p>سبانخ <span>69EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="مائدة">
-        <p>سبانخ + جبنة <span>79$</span></p>
+        <p>سبانخ + جبنة <span>89EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="مائدة">
-        <p>سبانخ + بصل <span>79$</span></p>
+        <p>عجه بيض ساده <span>69EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="مائدة">
-        <p>سبانخ + كيري <span>79$</span></p>
+        <p>عجه بيض + كيري<span>89EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="مائدة">
-        <p>عجينة بيض + جبنة موزاريلا <span>89$</span></p>
+        <p>عجه بيض + جبنةموزريلا<span>89EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="مائدة">
-        <p>كيري + بسطرمـه <span>109$</span></p>
+        <p>بيض + بسطرمـه <span>109EGP</span></p>
       </div>
     </div>
   </section>
@@ -152,44 +143,41 @@
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>صفيحة لحمة <span>79$</span></p>
+        <p>صفيحة لحمة <span>79EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/2.jpeg" alt="صفيحة لحمة + جبنة">
-        <p>صفيحة لحمة + جبنة <span>99$</span></p>
+        <p>صفيحة لحمة + جبنة <span>89EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="عرايس كفتة">
-        <p>عرايس كفتة  <span>109$</span></p>
+        <p>عروس كفتة  <span>109EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/4.jpeg" alt="عرايس كفتة + جبنة">
-        <p>عرايس كفتة + جبنة <span>119$</span></p>
-      </div>
-      <div class="meal-card">
-        <img src="images/5.jpeg" alt="شيش طاووق">
-        <p>شيش طاووق<span>79$</span></p>
+        <p>عروس كفتة + جبنة <span>119EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="شيش طاووق + جبنة">
-        <p>شيش طاووق + جبنة <span>99$</span></p>
+        <p>شيش طاووق + جبنة <span>89EGP</span></p>
+      </div>
+      <div class="meal-card">
+        <img src="images/5.jpeg" alt="شيش طاووق">
+        <p>هوت دوج + جبنة<span>89EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="كباب لبناني">
-        <p>كباب + جبنة <span>89$</span></p>
+        <p>كريسبي + جبنة <span>99EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="كباب لبناني + جبنة">
-        <p>كريسبي + جبنة <span>99$</span></p>
+        <p>فهيتا + جبنة <span>109EGP</span></p>
       </div>
       <div class="meal-card">
         <img src="images/3.jpeg" alt="">
-        <p>طاووق + بطاطس<span>89$</span></p>
+        <p> طاووق شيش<span>99EGP</span></p>
       </div>
-      <div class="meal-card">
-        <img src="images/3.jpeg" alt="مائدة">
-        <p>طاووق + جبنة<span>99$</span></p>
-      </div>
+
     </div>
   </section>
 
@@ -199,17 +187,24 @@
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/1.jpeg" alt="كيري مع عسل">
-        <p>كيري مع عسل <span>89$</span></p>
+        <p>جبنه كيرى<span>69EGP</span></p>
+        </div>
+      <div class="meal-card">
+        <img src="images/1.jpeg" alt="كيري مع عسل">
+        <p>كيري + عسل <span>79EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/1.jpeg" alt="كيري مع زعتر">
-        <p>كيري مع زعتر <span>79$</span></p>
+        <p>كيري + زعتر <span>79EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/1.jpeg" alt="كيري مع خضار">
-        <p>كيري مع خضار <span>79$</span></p>
+        <p>كيري + سجق <span>89EGP</span></p>
         </div>
-
+        <div class="meal-card">
+        <img src="images/1.jpeg" alt="كيري مع خضار">
+        <p>كيري مع موزاريلا <span>79EGP</span></p>
+        </div>
     </div>
   </section>
 
@@ -219,85 +214,114 @@
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة عكاوي + قشقوان <span>79$</span></p>
+        <p>جبنة عكاوي + قشقوان <span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة عكاوي + كيري وموزاريلا <span>109$</span></p>
+        <p>جبنة عكاوي كيري + مرتدلا <span>89EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة قشقوان <span>79$</span></p>
+        <p>جبنة لبناني <span>69EGP</span></p>
     </div>
     <div class="meal-card">
             <img src="images/1.jpeg" alt="طاهي لبناني">
-            <p>جبنة موزاريلا <span>79$</span></p>
+            <p>جبنة روي <span>69EGP</span></p>
     </div>
     <div class="meal-card">
             <img src="images/1.jpeg" alt="طاهي لبناني">
-            <p>جبنة + زعتر <span>79$</span></p>
+            <p>جبنة لبناني + قشقوان <span>79EGP</span></p>
         </div>
         <div class="meal-card">
             <img src="images/1.jpeg" alt="طاهي لبناني">
-            <p>جبنة + عسل <span>89$</span></p>
+            <p>جبنة + رشة زعتر <span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة + مرتديلا <span>89$</span></p>
+        <p>منقوشةأوليفيا طبقات جبنه وزعتر <span>109EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة + زيتون <span>79$</span></p>
+        <p>جبنة شلل + جرجير <span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة + خضار <span>79$</span></p>
+        <p>جبنة + زيتون <span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة + كيري <span>79$</span></p>
+        <p>جبنة حالوم <span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>منقوشة أوفربلو طيّات جبنة <span>109$</span></p>
+        <p>جبنه مشروم وزرة<span>89EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة قشقوان + بسطـرمـه <span>109$</span></p>
+        <p>جبنة قشقوان <span>69EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة + سجق <span>79$</span></p>
+        <p>جبنة قشقوان + بسطرمـه <span>99EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>جبنة + بطاطس <span>79$</span></p>
+        <p>جبنة قشقوان + حبش مدخن <span>89EGP</span></p>
     </div>
-
+     <div class="meal-card">
+        <img src="images/1.jpeg" alt="طاهي لبناني">
+        <p>جبنة مكس  <span>89EGP</span></p>
+    </div>
+     <div class="meal-card">
+        <img src="images/1.jpeg" alt="طاهي لبناني">
+        <p>جبنة + خضار <span>79EGP</span></p>
+    </div>
+     <div class="meal-card">
+        <img src="images/1.jpeg" alt="طاهي لبناني">
+        <p>جبنة عكاوي + قشقوان <span>79EGP</span></p>
+    </div>
+     <div class="meal-card">
+        <img src="images/1.jpeg" alt="طاهي لبناني">
+        <p>جبنة بيض + بسطرمـه <span>119EGP</span></p>
+    </div>
     </div>
   </section>
-
-  <!-- اضافات للمناقيش -->
-     <section id="add" class="featured fade-in">
-    <h2>اضافات للمناقيش</h2>
+  <!-- مناقيش لبنة -->
+     <section id="brick" class="featured fade-in">
+    <h2>مناقيش لبنة</h2>
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>إضافة لحوم على المناقيش <span>49$</span></p>
+        <p>لبنة سادة<span>69EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>إضافة خضار على المنقوشة <span>19$</span></p>
+        <p>لبنة + خضار<span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>إضافة لحوم على البيتزا <span>69$</span></p>
+        <p>لبنة + خضار + مرتدلا<span>99EGP</span></p>
+    </div>
+    <div class="meal-card">
+            <img src="images/1.jpeg" alt="طاهي لبناني">
+            <p>لبنة + عسل<span>79EGP</span></p>
+    </div>
+    <div class="meal-card">
+            <img src="images/1.jpeg" alt="طاهي لبناني">
+            <p>جبنة لبناني + قشقوان <span>79EGP</span></p>
+        </div>
+        <div class="meal-card">
+            <img src="images/1.jpeg" alt="طاهي لبناني">
+            <p>لبنة + زعتر <span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>إضافة خضار على البيتزا <span>29$</span></p>
+        <p>لبنة + زعتر + خضرة <span>89EGP</span></p>
     </div>
-
+    <div class="meal-card">
+        <img src="images/1.jpeg" alt="طاهي لبناني">
+        <p>منقوشة فيروز <span>89EGP</span></p>
+    </div>
     </div>
   </section>
 
@@ -306,43 +330,81 @@
     <h2>بيتزا</h2>
     <div class="meal-slider">
     <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>مارجريتا <span>149$ - 219$ - 279$ - 319$</span></p>
+        <img src="images/11.jpeg" alt="طاهي لبناني">
+        <p>الفصول الاربعه <span>199EGP - 279EGP - 319EGP</span></p>
     </div>
     <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-
-        <p>خضار <span>149$ - 219$ - 279$ - 319$</span></p>
+        <img src="images/15.jpeg" alt="طاهي لبناني">
+        <p>ميامي تشكن <span> 219EGP - 279EGP - 319EGP</span></p>
     </div>
     <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>بيبروني <span>189$ - 249$ - 279$ - 319$</span></p>
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>سلامي <span>199 - 249EGP - 319EGP</span></p>
     </div>
     <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>سلامي <span>189$ - 249$ - 279$ - 319$</span></p>
+        <img src="images/16.jpeg" alt="طاهي لبناني">
+        <p>جبنة مكس <span>189EGP - 229EGP - 279EGP</span></p>
     </div>
     <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-    <p>تونة <span>189$ - 249$ - 279$ - 329$</span></p>
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+    <p>بيتزا شوكولاتة <span>149EGP - 199EGP - 279EGP</span></p>
     </div>
     <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>دجاج باربيكيو <span>189$ - 249$ - 279$ - 329$</span></p>
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>بيبروني<span>179EGP - 209EGP - 299EGP</span></p>
     </div>
     <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>كواترو فورماجي <span>189$ - 249$ - 279$ - 329$</span></p>
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>مارغريتا<span>149EGP - 199EGP - 249EGP</span></p>
     </div>
     <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>سوبر سوبريم <span>189$ - 249$ - 279$ - 329$</span></p>
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>خضار<span>169EGP - 189EGP - 229EGP</span></p>
     </div>
     <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>بيتزا لبنانية <span>179$ - 249$ - 289$ - 349$</span></p>
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>سجق<span>219EGP - 259EGP - 329EGP</span></p>
     </div>
-
+     <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>مرتديلا<span>179EGP - 259EGP - 329EGP</span></p>
+    </div>
+ <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>مكسيكانو<span>199EGP - 249EGP - 299EGP</span></p>
+    </div>
+ <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>هواي<span>199EGP - 219EGP - 289EGP</span></p>
+    </div>
+ <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>تروييكانا<span>199EGP - 249EGP - 299EGP</span></p>
+    </div>
+ <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>هوت سبايسي<span>199EGP - 249EGP - 299EGP</span></p>
+    </div>
+ <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>كريسبي<span>199EGP - 249EGP - 299EGP</span></p>
+    </div>
+ <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>تونه<span>199EGP - 229EGP - 299EGP</span></p>
+    </div>
+ <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>كريزي<span>299EGP - 349EGP - 399EGP</span></p>
+    </div>
+ <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>هوت دوج<span>179EGP - 229EGP - 279EGP</span></p>
+    </div>
+ <div class="meal-card">
+        <img src="images/17.jpeg" alt="طاهي لبناني">
+        <p>بيتزا مايتي ميتي<span>249EGP - 299EGP - 349EGP</span></p>
+    </div>
     </div>
   </section>
   <!-- سوريه  -->
@@ -350,24 +412,24 @@
     <h2>سوريه</h2>
     <div class="meal-slider">
       <div class="meal-card">
-        <img src="images/17.jpeg" alt="بوكس سواريه مشكل">
-        <p>بوكس سواريه مشكل <span>59$</span></p>
+        <img src="images/1.jpeg" alt="بوكس سواريه مشكل">
+        <p>بوكس سواريه 20 قطعة <span>359EGP</span></p>
         </div>
         <div class="meal-card">
-        <img src="images/17.jpeg" alt="بوكس سواريه شوكولاتة">
-        <p>بوكس سواريه شوكولاتة <span>89$</span></p>
+        <img src="images/8.jpeg" alt="بوكس سواريه شوكولاتة">
+        <p>بوكس سواريه شوكولاتة 20 قطة <span>329EGP</span></p>
         </div>
         <div class="meal-card">
-        <img src="images/17.jpeg" alt="بوكس سواريه لحمة">
-        <p>بوكس سواريه لحمة <span>99$</span></p>
+        <img src="images/1.jpeg" alt="بوكس سواريه لحمة">
+        <p>بوكس سمبوسك لحمة 20 قطعة <span>399EGP</span></p>
         </div>
         <div class="meal-card">
-        <img src="images/17.jpeg" alt="بوكس سواريه تمر">
-        <p>بوكس سواريه تمر <span>89$</span></p>
+        <img src="images/8.jpeg" alt="بوكس سواريه تمر">
+        <p>بوكس سواريه تمر 20 قطعة <span>329EGP</span></p>
         </div>
         <div class="meal-card">
-        <img src="images/17.jpeg" alt="بوكس سواريه كعك بالشوكولاتة">
-        <p>بوكس سواريه كعك بالشوكولاتة <span>99$</span></p>
+        <img src="images/1.jpeg" alt="بوكس سواريه كعك بالشوكولاتة">
+        <p>بوكس سواريه كعك بالشوكولاتة 20 قطعة <span>349EGP</span></p>
         </div>
     </div>
   </section>
@@ -378,23 +440,27 @@
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/15.jpeg" alt="كعكة سادة">
-        <p>كعكة سادة <span>59$</span></p>
+        <p>كعكة مشبكة سادة <span>59EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/15.jpeg" alt="كعكة زعتر">
-        <p>كعكة زعتر <span>59$</span></p>
+        <p>كعكة سادة <span>59EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/15.jpeg" alt="كعكة جبنة وزعتر">
-        <p>كعكة جبنة وزعتر <span>89$</span></p>
+        <p>كعكة + زعتر <span>89EGP</span></p>
+        </div>
+        <div class="meal-card">
+        <img src="images/15.jpeg" alt="كعكة جبنة وزعتر">
+        <p>كعكة جبنة + زعتر <span>99EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/15.jpeg" alt="كعكة بيروت">
-        <p>كعكة بيروت <span>99$</span></p>
+        <p>كعكة بيروت <span>89EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/15.jpeg" alt="كعكة أبو عرب">
-        <p>كعكة أبو عرب <span>99$</span></p>
+        <p>كعكة أبو عرب <span>99EGP</span></p>
         </div>
     </div>
   </section>
@@ -404,23 +470,23 @@
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/13.jpeg" alt="سلطة تبولة">
-        <p>سلطة تبولة <span>89$</span></p>
+        <p>سلطة تبولة <span>89EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/13.jpeg" alt="سلطة فتوش">
-        <p>سلطة فتوش <span>89$</span></p>
+        <p>سلطة فتوش <span>89EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/13.jpeg" alt="حمص">
-        <p>حمص <span>79$</span></p>
+        <p>حمص <span>79EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/13.jpeg" alt="ورق عنب">
-        <p>ورق عنب <span>79$</span></p>
+        <p>ورق عنب <span>79EGP</span></p>
         </div>
         <div class="meal-card">
         <img src="images/13.jpeg" alt="صحن خضار">
-        <p>صحن خضار <span>39$</span></p>
+        <p>صحن خضار <span>39EGP</span></p>
         </div>
     </div>
   </section>
@@ -431,66 +497,92 @@
         <div class="meal-slider">
         <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>منقوشة نوتيلا <span>79$</span></p>
+        <p>منقوشة تمر <span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>منقوشة نوتيلا مع موز <span>79$</span></p>
+        <p>شوكولاتة سادة<span>69EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>منقوشة حلاوة <span>79$</span></p>
+        <p>شوكولاتة + موز <span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>منقوشة قشدة وعسل <span>79$</span></p>
+        <p>منقوشة حلاوة <span>79EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>حلاوة مع موز <span>89$</span></p>
+        <p> منقوشة موز + عسل <span>79EGP</span></p>
     </div>
-
+    <div class="meal-card">
+        <img src="images/1.jpeg" alt="طاهي لبناني">
+        <p> حلاوة + موز <span>89EGP</span></p>
+    </div>
         </div>
     </section>
-  <!-- المشروبات  -->
-     <section id="drinks" class="featured fade-in">
-    <h2>سيبيال الخبز اللبناني</h2>
+    <!-- اضافات للمناقيش -->
+     <section id="add" class="featured fade-in">
+    <h2>اضافات للمناقيش</h2>
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>سفن أب <span>20$</span></p>
+        <p>إضافة لحوم على المناقيش <span>49EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-    <p>بيبسي <span>20$</span></p>
+        <p>إضافة خضار على المنقوشة <span>19EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>ميرندا <span>20$</span></p>
+        <p>إضافة لحوم على البيتزا <span>69EGP</span></p>
     </div>
     <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>عصير <span>25$</span></p>
-    </div>
-    <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>لبن <span>25$</span></p>
-    </div>
-    <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>ديو <span>20$</span></p>
-    </div>
-    <div class="meal-card">
-        <img src="images/1.jpeg" alt="طاهي لبناني">
-        <p>مياه <span>15$</span></p>
+        <p>إضافة خضار على البيتزا <span>29EGP</span></p>
     </div>
 
     </div>
   </section>
 
-  <!-- عروض الصيف  -->
+  <!-- المشروبات  -->
+     <section id="drinks" class="featured fade-in">
+    <h2>المشروبات</h2>
+    <div class="meal-slider">
+      <div class="meal-card">
+        <img src="images/7up.jpg" alt="طاهي لبناني">
+        <p>سفن أب <span>20EGP</span></p>
+    </div>
+    <div class="meal-card">
+        <img src="images/pepsi.jpg" alt="طاهي لبناني">
+    <p>بيبسي <span>20EGP</span></p>
+    </div>
+    <div class="meal-card">
+        <img src="images/Mirinda.webp" alt="طاهي لبناني">
+        <p>ميرندا <span>20EGP</span></p>
+    </div>
+    <div class="meal-card">
+        <img src="images/tea.jpg" alt="طاهي لبناني">
+        <p>شاي <span>25EGP</span></p>
+    </div>
+    <div class="meal-card">
+        <img src="images/coffe.jpg" alt="طاهي لبناني">
+        <p>قهوه <span>30EGP</span></p>
+    </div>
+    <div class="meal-card">
+        <img src="images/niccoffe.jpg" alt="طاهي لبناني">
+        <p>نسكفيه <span>30EGP</span></p>
+    </div>
+    <div class="meal-card">
+        <img src="images/whiter.jpg" alt="طاهي لبناني">
+        <p>مياه <span>15EGP</span></p>
+    </div>
+    </div>
+  </section>
+
+  <!-- عروض   -->
      <section id="Offers" class="featured fade-in">
-    <h2>سيبيال الخبز اللبناني</h2>
+    <h2>العروض</h2>
     <div class="meal-slider">
       <div class="meal-card">
         <img src="images/1.jpeg" alt="طاهي لبناني">
@@ -516,6 +608,6 @@
         </footer>
   <!-- end footer -->
         <script src="assets/javascrept/script.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
